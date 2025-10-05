@@ -1,0 +1,247 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.cabecalho {
+    background-color: #000; /* fundo preto */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza horizontalmente */
+    text-align: center;
+}
+
+.cabecalho img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    background-color: #7b2cbf;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: #9d4edd;
+}
+
+.form-contato {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+.form-contato input,
+.form-contato textarea,
+.form-contato button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-contato button {
+    background-color: #7b2cbf;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-contato button:hover {
+    background-color: #9d4edd;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.container .produtos {
+	color: #000000;
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 32px;
+	line-height: 32px;
+	letter-spacing: 2px;
+}
+
+.container .filtros {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 32px;
+}
+
+.container .categorias-cartas,
+.container .preco-cartas {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+.container label {
+	letter-spacing: 2px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.container .categorias-cartas select,
+.container .preco-cartas input {
+	padding: 16px 13px;
+	border-radius: 2px;
+	border: 2px solid #000000;
+	background-color: #ffffff;
+	color: #130234;
+	height: 52px;
+}
+
+.container select:focus,
+.container input:focus,
+.container selecat:focus-visible,
+.container input:focus-visible {
+	outline: none;
+}
+
+.container select.categoria {
+	appearance: none;
+	background: url(../imagens/seta-para-baixo.png) 97% center no-repeat;
+}
+
+.container .filtros .btn-filtrar {
+	border: none;
+	background-color: #000000;
+	color: #ededed;
+	padding: 16px 32px;
+	font-weight: 500;
+	align-self: end;
+	width: 177px;
+	height: 52px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	transition: 0.3s;
+}
+
+.container .filtros .btn-filtrar:hover {
+	background-color: #33008f;
+}
+
+.container .cartas {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+	margin-top: 32px;
+}
+
+.container .cartas .carta {
+	max-width: 365px;
+	background-color: #ededed;
+	color: #0e0027;
+	border-radius: 20px;
+	box-shadow: 0 6px 12px rgb(0, 0, 0, 0.2);
+}
+
+.container .carta img {
+	width: 100%;
+	padding: 20px;
+}
+
+.container .carta .informacoes {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: #ffffff;
+	padding: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.container .carta .informacoes .nome-personagem {
+	font-size: 24px;
+	font-weight: 700;
+	color: #111111;
+}
+
+.container .carta .informacoes .categoria {
+	color: #2b2b2b;
+	font-weight: 700;
+}
+
+.container .carta .informacoes .preco {
+	font-size: 24px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.container .carta .informacoes .btn-comprar {
+	color: #ededed;
+	background-color: #000000;
+	padding: 16px;
+	border-radius: 4px;
+	letter-spacing: 2px;
+	transition: 0.3s;
+	text-align: center;
+	text-decoration: none;
+}
+
+.container .carta .informacoes .btn-comprar:hover {
+	background-color: #4b307e;
+}
+
+.rodape {
+	background-color: #000000;
+	display: flex;
+	justify-content: center;
+	color: #ededed;
+	padding: 20px;
+	margin-top: 60px;
+}
+
+.esconder {
+	display: none;
+}
+
+.mostrar {
+	display: block;
+}
+
+
+.sobre-site {
+  padding: 60px 20px;
+  background-color: #f2f2f2;
+}
+
+.sobre-site h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.sobre-site p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  line-height: 1.6;
+}
